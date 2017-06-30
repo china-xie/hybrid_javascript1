@@ -2,8 +2,8 @@
 //  HybridAppTestUITests.m
 //  HybridAppTestUITests
 //
-//  Created by 李然豪 on 2017/4/24.
-//  Copyright © 2017年 李然豪. All rights reserved.
+//  Created by xjw on 2017/4/24.
+//  Copyright © 2017年 xjw. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>

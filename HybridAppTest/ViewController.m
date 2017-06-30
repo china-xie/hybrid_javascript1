@@ -2,8 +2,8 @@
 //  ViewController.m
 //  HybridAppTest
 //
-//  Created by 李然豪 on 2017/4/24.
-//  Copyright © 2017年 李然豪. All rights reserved.
+//  Created by xjw on 2017/4/24.
+//  Copyright © 2017年 xjw. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -71,6 +71,15 @@
         NSLog(@"%@", exceptionValue);
     };
 
+  
+    self.jsContext[@"testobject"]= model;
+    
+    //同样我们也用刚才的方式模拟一下js调用方法
+    NSString *jsStr1=@"testobject.TestNOParameter()";
+    [ self.jsContext evaluateScript:jsStr1];
+    NSString *jsStr2=@"testobject.TestOneParameter('参数1')";
+    [ self.jsContext evaluateScript:jsStr2];
+    
 }
 
 
